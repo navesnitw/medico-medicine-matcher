@@ -5,8 +5,8 @@ from pydantic import BaseModel
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 import os
-from app.mysql_vendor_repository import MySQLVendorRepository
-from app.mysql_master_repository import MySQLMasterRepository
+from mysql_vendor_repository import MySQLVendorRepository
+from mysql_master_repository import MySQLMasterRepository
 
 class MedicineMapping(BaseModel):
     vendor_name: str 
